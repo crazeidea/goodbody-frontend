@@ -1,0 +1,7 @@
+{
+  "name": "goodbody-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
