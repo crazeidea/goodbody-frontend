@@ -5,14 +5,14 @@
         <div class='font-bold text-3xl'>GOOD BODY</div>
         <div class='font-bold text-xl'>로그인</div>
       </div>
-      <form class="flex flex-col gap-2" [formGroup]="loginForm">
+      <form class="flex flex-col gap-2" [formGroup]="loginForm" (ngSubmit)="submit()">
         <ion-item>
           <ion-label position="stacked">아이디</ion-label>
           <ion-input formControlName='username'></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="stacked">비밀번호</ion-label>
-          <ion-input formControlName='password' type='password'></ion-input>
+          <ion-input formControlName='password' type='password' (keyup.enter)="submit()"></ion-input>
         </ion-item>
         <ion-button type='submit'>로그인</ion-button>
         <ion-button color='light'>회원가입</ion-button>
